@@ -1,4 +1,4 @@
 # Simple-Banking-Application
-A simple banking application with options to withdraw options deposit and a simple validation flow.
+A simple banking application with options to generate coupons and a simple validation flow.
 
 
