@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Simple Banking Application</title>
-        <script src="logic.js"></script>
-        <stylesheet src="index.css"></stylesheet>
+<head>
+  <meta charset="UTF-8">
+  <title>XYZ Bank Customer Page</title>
+  <link rel="stylesheet" href="index.css">
 </head>
+<body onload="trigger();">
 
-<body>
-    <h1>Simple Banking Application</h1>
+  <p id="hover">Welcome customer !!!</p>
+
+  <p id="demo">
+    Follow the below steps to get your Diwali coupon:-<br>
+    1) Enter your customer ID in the textbox<br>
+    2) Click on the Validate Customer button<br>
+    3) Click on Register button to hide the above steps and apply for coupons<br>
+  </p>
+
+  <button type="button" onclick="document.getElementById('demo').style.display='none'">
+    Click here to Register
+  </button>
+  <br><br>
+
+  Enter Customer ID:
+  <input id="custID" type="text" name="customerID">
+  <br><br>
+
+  <button type="button" onclick="validateCustomer()">Validate Customer</button>
+  <button type="button" onclick="generateCoupon()">Generate Coupon</button>
+
+  <p id="result"></p>
+
+  <script src="logic.js"></script>
 </body>
 </html>
