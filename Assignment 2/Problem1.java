@@ -34,14 +34,14 @@ public class Problem1 {
             ls.get(c2).add(c1);
         }
 
-        dfs(ls, key, 1, -1, k, key[1]);   
+        dfs(ls, key, 1, -1, k, 0);   
 
         System.out.println(res);
     }
 
     public static void dfs(List<List<Integer>> ls, int[] key, int node, int parent, int k, int xor) {
        
-        if (xor >= k){ 
+        if (xor > k){ 
             res++;
         }
 
