@@ -6,9 +6,9 @@ public class Problem2 {
 
         int n = sc.nextInt();
 
-        long[] pts = new long[n];
+        int[] pts = new int[n];
         for (int i = 0; i < n; i++) {
-            pts[i] = sc.nextLong();
+            pts[i] = sc.nextInt();
         }
 
         if (n == 1) {
@@ -16,7 +16,7 @@ public class Problem2 {
             return;
         }
 
-        long[] dp = new long[n];
+        int[] dp = new int[n];
         dp[0] = pts[0];
         dp[1] = Math.max(pts[0], pts[1]);
 
